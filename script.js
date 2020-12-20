@@ -97,7 +97,7 @@ function play(e) {
   if (!validateAmount(betAmount)) {
     return;
   }
-  const prize = won * reward * betAmount;
+  const prize = Math.floor(won * reward * betAmount);
   handleResult(won, prize, betAmount);
   displayAmount(amount);
   pop = randomInt(5, 50);
@@ -114,4 +114,4 @@ displayReward(reward);
 toggleButton("play-again");
 document.getElementById("play").addEventListener("click", play);
 document.getElementById("play-again").addEventListener("click", playAgain);
-// document.getElementById("bet-amount").focus();
+document.getElementById("bet-amount").focus();
