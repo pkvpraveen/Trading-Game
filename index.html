@@ -1,0 +1,14 @@
+<h2>Lets play this game!</h2>
+<p >You have <span id='amount'></span> in your account; <span id='heading'>Make it <span id='target'>20000</span></span></p>
+<p id='bet'>Here is a bet where the probability of profit is <span id='pop'></span>% and reward is <span id='reward'></span>x</p>
+<p id='question'>How much you want to put?</p>
+<div><span id='won'></span></div>
+<div><span id='lost'></span></div>
+<div>
+  <form id='form' onsubmit="return play(event)">
+    <input type='number' id='bet-amount'/>
+    <button id='play' type='submit'>Play</button>
+  </form>
+</div>
+<br/>
+<button id='play-again'>Play Again</button>

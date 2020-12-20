@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  font-family: 'Poppins', serif;
+}
+$brandColor: darkorchid;
+
+body {
+  font-family: 'Poppins', serif;
+  background: linear-gradient(to bottom,
+    $brandColor,
+    darken($brandColor, 15%)
+  );
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+#amount, #pop, #reward {
+  color: blue;
+  font-weight: bold;
+}
+#amount::before{
+  content: '$';
+}
+#won, #target{
+  color: green;
+  font-weight: bold;
+}
+#target::before{
+  content:'$'
+}
+#lost{
+  color: red;
+  font-weight: bold;
+}
+#play-again{
+  display: 'none';
+}
